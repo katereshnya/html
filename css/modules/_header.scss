@@ -1,0 +1,61 @@
+.header__top {
+    background: $color-dark;
+    padding: 19px 0;
+}
+
+.header__flex {
+    @include position-flex(space-between);
+}
+
+.header__left a:first-child {
+    margin-right: 41px;
+}
+
+.header__right img:not(:last-child) {
+    margin-right: 33px;
+}
+
+.header__navigation {
+    background: #F8F3F4;
+}
+
+.header__navigation div {
+    height: 148px;
+}
+
+.header__menu {
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    font-weight: 300;
+    @include font(14px, 17px, #636363);
+}
+
+.header__menu li:last-child {
+    padding-left: 5px;
+}
+
+.header__menu li:not(:last-child) {
+    padding: 0 5px 0;
+    border-right: 1px solid #636363;
+    transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+}
+
+.header__menu li a {
+    display: block;
+    text-decoration: none;
+    font-weight: 300;
+    @include font(14px, 17px, #636363);
+}
+
+.header__menu li:last-child a {
+    color: $color-pink;
+}
+
+.header__menu li:not(:last-child) a {
+    transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+}
