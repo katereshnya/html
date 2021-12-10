@@ -45,11 +45,51 @@
     <main class="container">
         <header class="product__option">
             <div class="product__filter">
-                <a href="#">FILTER<img src="img/filter.svg" alt="filter"></a>
+                <details class="product__filter_item">
+                    <summary><span>FILTER</span><img src="img/filter.svg" alt="filter"></summary>
+                    <details>
+                        <summary>CATEGORY</summary>
+                        <label><input type="radio" name="category" value="Accessories">Accessories</label>
+                        <label><input type="radio" name="category" value="Bags">Bags</label>
+                        <label><input type="radio" name="category" value="Denim">Denim</label>
+                        <label><input type="radio" name="category" value="Hoodies & Sweatshirts">Hoodies &
+                            Sweatshirts</label>
+                        <label><input type="radio" name="category" value="Jackets & Coats">Jackets &
+                            Coats</label>
+                        <label><input type="radio" name="category" value="Polos">Polos</label>
+                        <label><input type="radio" name="category" value="Shirts">Shirts</label>
+                        <label><input type="radio" name="category" value="Shoes">Shoes</label>
+                        <label><input type="radio" name="category" value="Sweaters & Knits">Sweaters &
+                            Knits</label>
+                        <label><input type="radio" name="category" value="T-Shirts">T-Shirts</label>
+                        <label><input type="radio" name="category" value="Tanks">Tanks</label>
+                    </details>
+                    <details>
+                        <summary>BRAND</summary>
+                        <label><input type="radio" name="brand" value="1">1</label>
+                        <label><input type="radio" name="brand" value="2">2</label>
+                    </details>
+                    <details>
+                        <summary>DESIGNER</summary>
+                        <label><input type="radio" name="designer" value="11">11</label>
+                        <label><input type="radio" name="designer" value="22">22</label>
+                        <label><input type="radio" name="designer" value="33">33</label>
+                    </details>
+                </details>
             </div>
             <ul class="product__sort">
                 <li><a href="#">TRENDING NOW<img src="img/sort.svg" alt="sort"></a></li>
-                <li><a href="#">SIZE<img src="img/sort.svg" alt="sort"></a></li>
+                <li>
+                    <details class="product__sort_item">
+                        <summary>SIZE<img src="img/sort.svg" alt="sort"></summary>
+                        <div>
+                            <label><input type="checkbox" value="XS">XS</label>
+                            <label><input type="checkbox" value="S">S</label>
+                            <label><input type="checkbox" value="M">M</label>
+                            <label><input type="checkbox" value="L">L</label>
+                        </div>
+                    </details>
+                </li>
                 <li><a href="#">PRICE<img src="img/sort.svg" alt="sort"></a></li>
             </ul>
         </header>
@@ -213,7 +253,9 @@
             <div class="container footer__flex">
                 <div class="footer__comment">
                     <img src="img/face.png" alt="face">
-                    <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                    <div>
+                        <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                    </div>
                 </div>
                 <div class="footer__form">
                     <form action="#">

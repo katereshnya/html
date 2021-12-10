@@ -8,12 +8,12 @@
 /* Раздел промо */
 .main__promo {
     background: #F1E4E6;    
-    height: 764px;
+    height: calc(100vh - 80px);
 }
 
 .promo__flex {
     height: 100%;
-    background: url(../img/promo.png) no-repeat -228px;
+    background: url(../img/promo.png) no-repeat -228px bottom;
     @include position-flex(flex-end);
 }
 
