@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
+    <script src="https://kit.fontawesome.com/73cef8fe4e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,12 +21,56 @@
                     <img src="img/search.svg" alt="search">
                 </nav>
                 <nav class="header__right">
-                    <img src="img/menu.svg" alt="menu">
+                    <label class="nav__checked">
+                        <input type="checkbox">
+                        <img src="img/menu.svg" alt="menu">
+                    </label>
                     <img src="img/sign.svg" alt="sign">
                     <img src="img/basket.svg" alt="basket">
                 </nav>
             </div>
         </section>
+        <nav class="header__nav">
+            <div>
+                <label class="nav__checked">
+                    <input type="checkbox">
+                    <img src="img/checked.svg" alt="close">
+                </label>
+            </div>
+            <h2>MENU</h2>
+            <ul>
+                <li>
+                    MAN
+                    <ul>
+                        <li>Accessories</li>
+                        <li>Bags</li>
+                        <li>Denim</li>
+                        <li>T-Shirts</li>
+                    </ul>
+                </li>
+                <li>
+                    WOMAN
+                    <ul>
+                        <li>Accessories</li>
+                        <li>Jackets & Coats</li>
+                        <li>Polos</li>
+                        <li>T-Shirts</li>
+                        <li>Shirts</li>
+                    </ul>
+                </li>
+                <li>
+                    KIDS
+                    <ul>
+                        <li>Accessories</li>
+                        <li>Jackets & Coats</li>
+                        <li>Polos</li>
+                        <li>T-Shirts</li>
+                        <li>Shirts</li>
+                        <li>Bags</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -58,7 +103,7 @@
                 <p>Shop for items based on what we featured in this week</p>
             </div>
 
-            <div class="container product__flex">
+            <div class="container main__flex">
                 <article class="product__item">
                     <div class="product__img">
                         <img src="img/product1.png" alt="product1">
@@ -143,7 +188,7 @@
         <section class="container footer__flex">
             <article class="footer__plus">
                 <div>
-                    <img src="img/delivery.png" alt="delivery">
+                    <img src="img/delivery.svg" alt="delivery">
                 </div>
                 <h3>Free Delivery</h3>
                 <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
@@ -151,7 +196,7 @@
             </article>
             <article class="footer__plus">
                 <div>
-                    <img src="img/sales.png" alt="sales">
+                    <img src="img/sales.svg" alt="sales">
                 </div>
                 <h3>Sales & discounts</h3>
                 <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
@@ -159,7 +204,7 @@
             </article>
             <article class="footer__plus">
                 <div>
-                    <img src="img/quality.png" alt="quality">
+                    <img src="img/quality.svg" alt="quality">
                 </div>
                 <h3>Quality assurance</h3>
                 <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
@@ -188,10 +233,10 @@
                 © 2021 Brand All Rights Reserved.
             </div>
             <nav class="footer__social">
-                <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
-                <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
-                <a href="#"><img src="img/pinterest.svg" alt="printerest"></a>
-                <a href="#"><img src="img/twitter.svg" alt="twitter"></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
             </nav>
         </section>
     </footer>
