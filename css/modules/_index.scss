@@ -13,7 +13,8 @@
 
 .promo__flex {
     height: 100%;
-    background: url(../img/promo.png) no-repeat -228px bottom;
+    background: url(../img/promo.png) no-repeat calc(-1 * 100vh * 0.25) bottom;
+    background-size: 90vh;
     @include position-flex(flex-end);
 }
 
@@ -64,8 +65,7 @@
 }
 
 .category__item:last-child {
-    width: 100%;
-    height: 180px;
+    @include size(100%, 180px);
     background: url(../img/shadow.png),url(../img/accesories.png) no-repeat;
 }
 
@@ -126,10 +126,19 @@
     @include font(14px, 17px, $color-white);
 }
 
-.product__img a img {
+.product__img a:hover {
+    border-color: $color-pink;
+    color: $color-pink;
+}
+
+.product__item a svg {
     margin-right: 11px;
-    filter: brightness(0) invert(1);
+    fill: $color-white;
     @include size(26px, 24px);
+}
+
+.product__item a:hover svg {
+    fill: $color-pink;
 }
 
 .product__shadow {
@@ -139,8 +148,8 @@
     right: 0px;
 }
 
-.product__img:hover a, 
-.product__img:hover .product__shadow {
+.product__item:hover .product__img a, 
+.product__item:hover .product__shadow {
     visibility: visible;
 }
 
@@ -154,6 +163,15 @@
     line-height: 16px;
     margin: 25px 18px 0;
 }
+
+.product__item h3 a {
+    text-decoration: none;
+    color: $color-black;
+}
+
+.product__item h3 a:hover {
+    color: $color-pink;
+}  
 
 .product__item p {
     font-weight: 300;
@@ -182,4 +200,62 @@
 .product__button:hover {
     color: $color-white;
     background: #F16D7F;
+}
+
+
+/*Адаптив*/
+@media (max-width: 1160px) {
+
+    .main__category {
+        margin-bottom: 155px;
+    }
+
+    .category__flex {
+        justify-content: center;
+        gap: 19px;
+    }    
+
+    .category__item {
+        @include size(30.7vw, 167px);
+    }
+    
+    .category__item:last-child {
+        @include size(100%, 116px);
+    }
+
+
+
+}
+
+@media (max-width: 755px) {
+
+    .promo__flex {
+        background: none;
+        @include position-flex();
+    }
+
+    .main__category {
+        margin-bottom: 64px;
+    }
+
+    .category__flex {
+        justify-content: center;
+        gap: 32px;
+    } 
+
+    .category__item {
+        @include size(100%, 247px);
+    }
+    
+    .category__item:last-child {
+        @include size(100%, 111px);
+    }
+
+    .category__item:first-child,    
+    .category__item:nth-child(2),
+    .category__item:nth-child(3) {
+        background-position: top;
+        background-size: cover;
+    }
+
 }

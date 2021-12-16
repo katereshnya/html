@@ -119,3 +119,37 @@
     font-weight: 300;
     @include font(24px, 29px, $color-black);
 }
+
+
+/*Адаптив*/
+@media (max-width: 1160px) {
+
+    .reg__form {
+        margin-right: 22px;
+    }
+}
+
+@media (max-width: 755px) {
+
+    .reg__flex {
+        display: block;
+    }
+
+    .reg__flex > section {
+        @include position-flex();
+    }
+
+    .reg__form {
+        display: inline-block;
+    }
+
+    .reg__info{
+        margin-top: 40px;
+    }
+
+    .reg__info h2:hover {
+        color: $color-pink;
+        transform: translateX(10px) rotateX(60deg) scale(1);
+    }
+
+}
